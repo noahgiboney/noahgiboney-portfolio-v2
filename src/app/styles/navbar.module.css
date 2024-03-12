@@ -1,0 +1,31 @@
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 6vh;
+    align-items: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    background-color: var(--background);
+}
+
+.logoContainer {
+}
+
+.linksContainer {
+    display: inline-block;
+}
+
+.linksContainer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.linksContainer ul li {
+    list-style: none;
+}
+
+.linksContainer ul li a {
+    list-style: none;
+    text-decoration: none;
+}
