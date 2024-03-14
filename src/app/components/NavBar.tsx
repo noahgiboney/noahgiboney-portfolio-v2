@@ -17,24 +17,24 @@ function NavBar() {
               <Link href={"Projects"}>Projects</Link>
             </li>
             <li>
-              <Link href={"Projects"}>
+              {/* <Link href={"Projects"}>
                 <Image
                   src="/linkedin.svg" 
                   alt="Description of the Image" 
                   width={35} 
                   height={35} 
                 />
-              </Link>
+              </Link> */}
             </li>
             <li>
-              <Link href={"Projects"}>
+              {/* <Link href={"Projects"}>
                 <Image
                   src="/github.svg" 
                   alt="Description of the Image" 
                   width={30} 
                   height={30} 
                 />
-              </Link>
+              </Link> */}
             </li>
           </ul>
         </div>

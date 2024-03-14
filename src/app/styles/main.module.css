@@ -1,20 +1,71 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  background-color: #f3f4f6;
 }
 
 .infoContainer {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 8%;
+  margin-top: 50px;
 }
 
 .infoContainer h1 {
-    color: var(--accent);
+  color: var(--secondary);
+  font-size: 3rem;
+}
+
+.infoContainer h2 {
+  color: var(--text);
+  font-size: 1rem;
+  padding-bottom: 15px;
 }
 
 .info {
-    border: 1px solid red;
+  text-align: left;
+  max-width: 40%;
+}
+
+.faceshot {
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  box-shadow: 5px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+.socialContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.social {
+  border-radius: 60%;
+  overflow: hidden;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  box-shadow: 5px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out; 
+  margin-top: 20px;
+}
+
+.social:hover {
+  transform: scale(1.1);
+}
+.infoLine {
+  background-color: var(--accent);
+  width: 70%;
+  height: 2px;
+  margin: 10px 0;
 }
