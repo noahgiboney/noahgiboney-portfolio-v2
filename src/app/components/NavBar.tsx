@@ -10,7 +10,7 @@ function NavBar() {
           <div className={styles.logoContainer}>
             <div className={styles.logoImage}>
               <Image
-                src={"/skull-scan.svg"}
+                src={"/thunderbolt.svg"}
                 alt="logo"
                 layout="fill"
                 objectFit="cover"
@@ -33,26 +33,6 @@ function NavBar() {
             </li>
             <li>
               <Link href={"/contact"}>Contact</Link>
-            </li>
-            <li>
-              {/* <Link href={"Projects"}>
-                <Image
-                  src="/linkedin.svg" 
-                  alt="Description of the Image" 
-                  width={35} 
-                  height={35} 
-                />
-              </Link> */}
-            </li>
-            <li>
-              {/* <Link href={"Projects"}>
-                <Image
-                  src="/github.svg" 
-                  alt="Description of the Image" 
-                  width={30} 
-                  height={30} 
-                />
-              </Link> */}
             </li>
           </ul>
         </div>

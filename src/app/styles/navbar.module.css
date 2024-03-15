@@ -14,8 +14,9 @@
   display: flex;
   align-items: center;
   color: var(--accent);
-  gap: 10px;
+  gap: 8px;
   transition: transform 0.2s ease-in-out;
+  background-color: var(--background);
 }
 
 .logoContainer:hover {
@@ -23,12 +24,11 @@
 }
 
 .logoImage {
+  
   overflow: hidden;
   position: relative;
   width: 30px;
   height: 30px;
-  box-shadow: 5px 4px 6px -1px rgba(0, 0, 0, 0.2),
-    0 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 
 .linksContainer {
@@ -51,6 +51,7 @@
   list-style: none;
   text-decoration: none;
   padding: 10px 20px;
+  font-weight: bold;
 }
 
 .linksContainer ul li:hover {

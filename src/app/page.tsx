@@ -16,7 +16,7 @@ export default function Home() {
             Explore my projects below to see what I&apos;ve been working on.
           </p>
           <div className={styles.socialContainer}>
-            <Link href={"https://www.linkedin.com/in/noah-giboney-896847261/"}>
+            <Link href={"https://www.linkedin.com/in/noah-giboney-896847261/"} target={"blank"}>
               <div className={styles.social}>
                 <Image
                   src={"/linkedin.svg"}
