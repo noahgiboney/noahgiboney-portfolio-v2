@@ -16,7 +16,11 @@ export default function Home() {
             Explore my projects below to see what I&apos;ve been working on.
           </p>
           <div className={styles.socialContainer}>
-            <Link href={"https://www.linkedin.com/in/noah-giboney-896847261/"} target={"blank"}>
+            <Link
+              href={"https://www.linkedin.com/in/noah-giboney-896847261/"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <div className={styles.social}>
                 <Image
                   src={"/linkedin.svg"}
@@ -26,7 +30,11 @@ export default function Home() {
                 />
               </div>
             </Link>
-            <Link href={"https://github.com/noahgiboney"}>
+            <Link
+              href={"https://github.com/noahgiboney"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <div className={styles.social}>
                 <Image
                   src={"/github.svg"}
@@ -36,13 +44,19 @@ export default function Home() {
                 />
               </div>
             </Link>
-            <Link href={"/Noah Giboney Resume.pfd"}>
+            <Link
+              href={"public/Noah Giboney Resume.pdf"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <div className={styles.socialButton}>Resume</div>
             </Link>
             <Link
               href={
                 "https://apps.apple.com/us/developer/noah-giboney/id1732186750"
               }
+              rel="noopener noreferrer"
+              target="_blank"
             >
               <div className={styles.socialButton}>App Store</div>
             </Link>
@@ -58,7 +72,7 @@ export default function Home() {
         </div>
       </div>
       <section className={styles.projectContainer}>
-        <h1>Showcase</h1>
+        <h1>My Work</h1>
       </section>
     </main>
   );

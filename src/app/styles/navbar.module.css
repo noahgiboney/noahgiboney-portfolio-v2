@@ -2,19 +2,23 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 6vh;
+  height: 6.5vh;
   align-items: center;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
   background-color: var(--background);
   margin-bottom: 3px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logoContainer {
   display: flex;
   align-items: center;
   color: var(--accent);
-  gap: 8px;
+  gap: 12px;
   transition: transform 0.2s ease-in-out;
   background-color: var(--background);
 }
@@ -24,7 +28,6 @@
 }
 
 .logoImage {
-  
   overflow: hidden;
   position: relative;
   width: 30px;
@@ -39,21 +42,37 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .linksContainer ul li {
   list-style: none;
-  align-items: center;
-  padding: 20px 0;
+  padding: 20px 15px;
+  position: relative;
 }
 
 .linksContainer ul li a {
-  list-style: none;
   text-decoration: none;
-  padding: 10px 20px;
-  font-weight: bold;
+  padding: 10px 15px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  position: relative;
+  color: var(--textColor);
+  overflow: hidden;
 }
 
-.linksContainer ul li:hover {
-    background-color: var(--hover);
+.linksContainer ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--accent);
+  transition: width 0.3s ease-in-out;
+}
+
+.linksContainer ul li a:hover::after {
+  width: 100%;
 }
