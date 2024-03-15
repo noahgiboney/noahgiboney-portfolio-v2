@@ -1,35 +1,58 @@
 .navBar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 6vh;
-    align-items: center;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    background-color: var(--background);
-    margin-bottom: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 6vh;
+  align-items: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background-color: var(--background);
+  margin-bottom: 3px;
 }
 
 .logoContainer {
+  display: flex;
+  align-items: center;
+  color: var(--accent);
+  gap: 10px;
+  transition: transform 0.2s ease-in-out;
+}
 
+.logoContainer:hover {
+  transform: scale(1.1);
+}
+
+.logoImage {
+  overflow: hidden;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  box-shadow: 5px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 
 .linksContainer {
-    display: inline-block;
+  display: inline-block;
 }
 
 .linksContainer ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .linksContainer ul li {
-    list-style: none;
-    align-items: center;
+  list-style: none;
+  align-items: center;
+  padding: 20px 0;
 }
 
 .linksContainer ul li a {
-    list-style: none;
-    text-decoration: none;
-    padding: 10px 20px;
+  list-style: none;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.linksContainer ul li:hover {
+    background-color: var(--hover);
 }

@@ -6,15 +6,33 @@ function NavBar() {
   return (
     <>
       <div className={styles.navBar}>
-        <div className={styles.logoContainer}>NG</div>
+        <Link href={"/"}>
+          <div className={styles.logoContainer}>
+            <div className={styles.logoImage}>
+              <Image
+                src={"/skull-scan.svg"}
+                alt="logo"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <h1>NG</h1>
+          </div>
+        </Link>
 
         <div className={styles.linksContainer}>
           <ul>
             <li>
-              <Link href={"Home"}>Home</Link>
+              <Link href={"/"}>Home</Link>
             </li>
             <li>
-              <Link href={"Projects"}>Projects</Link>
+              <Link href={"/projects"}>Projects</Link>
+            </li>
+            <li>
+              <Link href={"/blog"}>Blog</Link>
+            </li>
+            <li>
+              <Link href={"/contact"}>Contact</Link>
             </li>
             <li>
               {/* <Link href={"Projects"}>

@@ -9,7 +9,7 @@ export default function Home() {
         <div className={styles.info}>
           <h1>Noah Giboney</h1>
           <div className={styles.infoLine}></div>
-          <h2>iOS Developer & CS @ Cal Poly</h2>
+          <h3>iOS Developer & CS @ Cal Poly</h3>
           <p>
             Hi, my name is Noah Giboney, I&apos;m an aspiring iOS Developer and
             a third-year Computer Science student at Cal Poly, San Luis Obispo.
@@ -36,6 +36,16 @@ export default function Home() {
                 />
               </div>
             </Link>
+            <Link href={"/Noah Giboney Resume.pfd"}>
+              <div className={styles.socialButton}>Resume</div>
+            </Link>
+            <Link
+              href={
+                "https://apps.apple.com/us/developer/noah-giboney/id1732186750"
+              }
+            >
+              <div className={styles.socialButton}>App Store</div>
+            </Link>
           </div>
         </div>
         <div className={styles.faceshot}>
@@ -47,6 +57,9 @@ export default function Home() {
           />
         </div>
       </div>
+      <section className={styles.projectContainer}>
+        <h1>Showcase</h1>
+      </section>
     </main>
   );
 }
