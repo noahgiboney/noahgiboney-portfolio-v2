@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./styles/main.module.css";
+import AppLogo from "./components/AppLogo";
 
 export default function Home() {
   return (
@@ -73,6 +74,20 @@ export default function Home() {
       </div>
       <section className={styles.projectContainer}>
         <h1>My Work</h1>
+        <div className={styles.project}>
+          <div className={styles.projectInfo}>
+            <div className={styles.projectHeader}>
+              <AppLogo path="/cryptid-coordinates-logo.png" />
+              <h2>Cryptid Coordinates</h2>
+            </div>
+            <p>
+              Cryptic Coordinates is a iOS app I built with SwiftUI and MapKit.
+              Through database management and asynchronous network calls, it
+              reveals haunted locations and ancient secrets hidden in plain
+              sight. It is available on the app store, see below.
+            </p>
+          </div>
+        </div>
       </section>
     </main>
   );
