@@ -13,13 +13,13 @@
 
 .inputFormContainer {
     max-width: 600px;
-    width: 100%; /* Ensures the form takes up the width of its container */
+    width: 100%; 
     margin: auto;
     padding: 20px;
     border-radius: 8px;
-    display: flex; /* Ensures the form contents are flex items */
-    flex-direction: column; /* Stacks form items vertically */
-    align-items: center; /* Aligns form items in the center horizontally */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
 }
   
   .inputFormContainer input,

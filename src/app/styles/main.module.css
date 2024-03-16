@@ -87,7 +87,7 @@
   display: flex;
   flex-direction: column;
   padding-top: 75px;
-  margin: 0 17%;
+  margin: 0 18%;
 }
 
 .projectContainer h1 {
@@ -100,11 +100,9 @@
   color: var(--background);
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: start;
-  padding: 10px 0 35px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  padding: 10px 70px 35px 30px;
 }
 
 .projectLine {
@@ -126,7 +124,7 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-  width: 50%;
+  width: 65%;
   margin-top: 20px;
 }
 
@@ -147,7 +145,7 @@
 }
 
 .projectButton:hover {
-  background-color: #616A8B;
+  background-color: #616a8b;
 }
 
 .skillContainer {
@@ -157,11 +155,11 @@
 
 .skill {
   font-size: 0.8rem;
-  padding: 8px 10px; 
+  padding: 8px 10px;
   text-align: center;
-  margin: 5px 15px;
+  margin: 5px 8;
   display: inline-flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -171,18 +169,30 @@
   display: flex;
   flex-direction: column;
   padding-top: 100px;
-  margin: 0 17%;
+  margin: 0 18%;
 }
 
-.interests {
-  background-color: var(--secondary);
-    display: flex;
+.interest {
+  display: flex;
   flex-direction: row;
-  color: var(--background);
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
-  align-items: start;
-  padding: 10px 0 35px;
   margin-top: 10px;
   margin-bottom: 20px;
+  align-items: center;
+}
+
+.interestInfo {
+  width: 80%;
+}
+
+.interestPhoto {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  height: 150px;
+  width: 200px;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 5px 4px 6px -1px rgba(0, 0, 0, 0.2),
+  0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  margin-right: 20px;
 }

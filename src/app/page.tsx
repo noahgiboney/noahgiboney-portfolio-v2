@@ -52,6 +52,16 @@ export default function Home() {
                 />
               </div>
             </Link>
+            <Link href={"/contact"} rel="noopener noreferrer" target="_blank">
+              <div className={styles.social}>
+                <Image
+                  src={"/email.svg"}
+                  alt="contact icon"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
+            </Link>
             <Link
               href={"public/Noah Giboney Resume.pdf"}
               rel="noopener noreferrer"
@@ -112,16 +122,24 @@ export default function Home() {
                 <div className={styles.projectButton}>App Store</div>
               </Link>
             </div>
-
             <div className={styles.skillContainer}>
               <div className={styles.skill}>
                 <p>SwiftUI</p>
               </div>
               <div className={styles.skill}>
+                <p>●</p>
+              </div>
+              <div className={styles.skill}>
                 <p>MapKit</p>
               </div>
               <div className={styles.skill}>
+                <p>●</p>
+              </div>
+              <div className={styles.skill}>
                 <p>MVVM</p>
+              </div>
+              <div className={styles.skill}>
+                <p>●</p>
               </div>
               <div className={styles.skill}>
                 <p>API</p>
@@ -133,7 +151,39 @@ export default function Home() {
       </section>
       <section className={styles.interestsContainer}>
         <h1>Interests</h1>
-        <div className={styles.interests}></div>
+        <div className={styles.interest}>
+          <div className={styles.interestInfo}>
+            <p>
+              This is my mk7 VW GTI. Some of the things I have done to the car:
+              clubsport exhuast, carbon fiber spoiler extension, and gloss black
+              rims.
+            </p>
+          </div>
+          <div className={styles.interestPhoto}>
+            <Image
+              src={"/gti.jpg"}
+              alt="app preview"
+              layout="fill"
+              objectFit="fill"
+            />
+          </div>
+        </div>
+        <div className={styles.interest}>
+          <div className={styles.interestPhoto}>
+            <Image
+              src={"/soccer.jpg"}
+              alt="app preview"
+              layout="fill"
+              objectFit="fill"
+            />
+          </div>
+          <div className={styles.interestInfo}>
+            <p>
+              I&apos;m a big fan of fitness/excerise. In my free time I love
+              lifting weights, playing soccer, swimming, and going for runs
+            </p>
+          </div>
+        </div>
       </section>
     </main>
   );
