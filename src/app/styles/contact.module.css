@@ -1,0 +1,67 @@
+.background {
+    background-color: var(--background);
+    height: 89vh;
+    padding: 20px; 
+    font-size: left;
+}
+
+.background h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.inputFormContainer {
+    max-width: 600px;
+    width: 100%; /* Ensures the form takes up the width of its container */
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex; /* Ensures the form contents are flex items */
+    flex-direction: column; /* Stacks form items vertically */
+    align-items: center; /* Aligns form items in the center horizontally */
+}
+  
+  .inputFormContainer input,
+  .inputFormContainer textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .inputFormContainer input:focus,
+  .inputFormContainer textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }
+  
+  .inputFormContainer input::placeholder,
+  .inputFormContainer textarea::placeholder {
+    color: #999;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: start;
+    gap: 10px; 
+    font-size: 1.2rem;
+  }
+  
+  .button {
+    color: var(--background);
+    padding: 8px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease,
+      background-color 0.3s ease;
+    background-color: var(--accent);
+    border: none;
+    font-size: 1.25rem;
+  }
+  
+  .button:hover {
+    background-color: #616A8B;
+  }

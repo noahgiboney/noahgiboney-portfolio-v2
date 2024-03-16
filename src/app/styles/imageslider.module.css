@@ -1,0 +1,12 @@
+.image {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  height: 350px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.sliderContainer {
+  width: 25%;
+  background-color: var(--primary);
+}

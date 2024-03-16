@@ -2,8 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./styles/main.module.css";
 import AppLogo from "./components/AppLogo";
+import ImageSlider from "./components/ImageSlider";
 
 export default function Home() {
+  const test = [
+    "/crytpidcoordinates/preview1.png",
+    "/crytpidcoordinates/preview2.png",
+    "/crytpidcoordinates/preview3.png",
+  ];
+
   return (
     <main className={styles.main}>
       <div className={styles.infoContainer}>
@@ -50,7 +57,7 @@ export default function Home() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <div className={styles.socialButton}>Resume</div>
+              <div className={styles.button}>Resume</div>
             </Link>
             <Link
               href={
@@ -59,7 +66,7 @@ export default function Home() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <div className={styles.socialButton}>App Store</div>
+              <div className={styles.button}>App Store</div>
             </Link>
           </div>
         </div>
@@ -73,8 +80,11 @@ export default function Home() {
         </div>
       </div>
       <section className={styles.projectContainer}>
-        <h1>My Work</h1>
-        <div className={styles.project}>
+        <h1>Projects</h1>
+        <div
+          className={styles.project}
+          style={{ backgroundColor: "var(--primary)" }}
+        >
           <div className={styles.projectInfo}>
             <div className={styles.projectHeader}>
               <AppLogo path="/cryptid-coordinates-logo.png" />
@@ -86,8 +96,44 @@ export default function Home() {
               reveals haunted locations and ancient secrets hidden in plain
               sight. It is available on the app store, see below.
             </p>
+            <div className={styles.buttonContainter}>
+              <Link
+                href={"public/Noah Giboney Resume.pdf"}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <div className={styles.projectButton}>Learn More</div>
+              </Link>
+              <Link
+                href={"public/Noah Giboney Resume.pdf"}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <div className={styles.projectButton}>App Store</div>
+              </Link>
+            </div>
+
+            <div className={styles.skillContainer}>
+              <div className={styles.skill}>
+                <p>SwiftUI</p>
+              </div>
+              <div className={styles.skill}>
+                <p>MapKit</p>
+              </div>
+              <div className={styles.skill}>
+                <p>MVVM</p>
+              </div>
+              <div className={styles.skill}>
+                <p>API</p>
+              </div>
+            </div>
           </div>
+          <ImageSlider images={test} />
         </div>
+      </section>
+      <section className={styles.interestsContainer}>
+        <h1>Interests</h1>
+        <div className={styles.interests}></div>
       </section>
     </main>
   );
