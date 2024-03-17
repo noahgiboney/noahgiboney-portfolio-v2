@@ -154,9 +154,10 @@ export default function Home() {
         <div className={styles.interest}>
           <div className={styles.interestInfo}>
             <p>
-              This is my mk7 VW GTI. Some of the things I have done to the car:
-              clubsport exhuast, carbon fiber spoiler extension, and gloss black
-              rims.
+              This is my MK7 VW GTI. I love this car because it was the speed to
+              explode through traffic while being a great daily commuter Some
+              mods I have done: clubsport exhuast, carbon fiber spoiler
+              extension, diffuser, and gloss black rims.
             </p>
           </div>
           <div className={styles.interestPhoto}>
@@ -179,8 +180,8 @@ export default function Home() {
           </div>
           <div className={styles.interestInfo}>
             <p>
-              I&apos;m a big fan of fitness/excerise. In my free time I love
-              lifting weights, playing soccer, swimming, and going for runs
+              I&apos;m a big fan of fitness/excerise. I love lifting weights,
+              playing soccer, swimming, and going for runs.
             </p>
           </div>
         </div>

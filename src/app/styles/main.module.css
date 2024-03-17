@@ -183,10 +183,10 @@
 
 .interestInfo {
   width: 80%;
+  margin-right: 30px;
 }
 
 .interestPhoto {
-  border-radius: 12px;
   overflow: hidden;
   position: relative;
   height: 150px;
@@ -194,5 +194,5 @@
   transition: transform 0.2s ease-in-out;
   box-shadow: 5px 4px 6px -1px rgba(0, 0, 0, 0.2),
   0 2px 4px -1px rgba(0, 0, 0, 0.2);
-  margin-right: 20px;
+  margin-right: 30px;
 }
