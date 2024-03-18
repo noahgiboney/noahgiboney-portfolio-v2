@@ -52,7 +52,7 @@ export default function Home() {
                 />
               </div>
             </Link>
-            <Link href={"/contact"} rel="noopener noreferrer" target="_blank">
+            <Link href={"/contact"} rel="noopener noreferrer">
               <div className={styles.social}>
                 <Image
                   src={"/email.svg"}
@@ -180,8 +180,9 @@ export default function Home() {
           </div>
           <div className={styles.interestInfo}>
             <p>
-              I&apos;m a big fan of fitness/excerise. I love lifting weights,
-              playing soccer, swimming, and going for runs.
+              I&apos;m a big fan of fitness & excerise. For me the key to having
+              a healthy mind is having a healthy body. I enjoy lifting weights,
+              playing soccer, swimming, and going for runs in my free time.
             </p>
           </div>
         </div>

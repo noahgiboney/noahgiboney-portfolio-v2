@@ -48,12 +48,22 @@ export default function ContactForm() {
 
   return (
     <div className={style.background}>
-      <h1>Contact</h1>
+      <div className={style.info}></div>
+
       <form
         ref={form}
         onSubmit={sendEmail}
         className={style.inputFormContainer}
       >
+        <div>
+          <h1>Contact</h1>
+          <p>
+            {" "}
+            Shoot me a message below or feel to free to reach out on{" "}
+            <a href="https://www.linkedin.com/in/noah-giboney-896847261/" target="_blank">LinkedIn.</a>
+          </p>
+        </div>
+
         <input
           placeholder="Your Name"
           name="name"
