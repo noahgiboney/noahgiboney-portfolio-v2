@@ -63,20 +63,29 @@ export default function Home() {
               </div>
             </Link>
             <Link
-              href={"public/Noah Giboney Resume.pdf"}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <div className={styles.button}>Resume</div>
-            </Link>
-            <Link
               href={
                 "https://apps.apple.com/us/developer/noah-giboney/id1732186750"
               }
               rel="noopener noreferrer"
               target="_blank"
             >
-              <div className={styles.button}>App Store</div>
+              <div className={styles.button}>
+                <Image
+                  src={"/appleicon.png"}
+                  alt="apple icon"
+                  width={16}
+                  height={16}
+                  objectFit="contain"
+                />
+                App Store
+              </div>
+            </Link>
+            <Link
+              href={"/Noah Giboney Resume.pdf"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div className={styles.button}>Resume</div>
             </Link>
           </div>
         </div>
@@ -108,17 +117,12 @@ export default function Home() {
             </p>
             <div className={styles.buttonContainter}>
               <Link
-                href={"public/Noah Giboney Resume.pdf"}
+                href={"/projects/cryptidcoordinates"}
                 rel="noopener noreferrer"
-                target="_blank"
               >
                 <div className={styles.projectButton}>Learn More</div>
               </Link>
-              <Link
-                href={"public/Noah Giboney Resume.pdf"}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
+              <Link href={""} rel="noopener noreferrer" target="_blank">
                 <div className={styles.projectButton}>App Store</div>
               </Link>
             </div>
