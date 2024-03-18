@@ -59,7 +59,7 @@ export default function ContactForm() {
           <h1>Contact</h1>
           <p>
             {" "}
-            Shoot me a message below or feel to free to reach out on{" "}
+            Message below or reach out on{" "}
             <a href="https://www.linkedin.com/in/noah-giboney-896847261/" target="_blank">LinkedIn.</a>
           </p>
         </div>

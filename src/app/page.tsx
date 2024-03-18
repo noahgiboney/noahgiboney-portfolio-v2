@@ -158,7 +158,7 @@ export default function Home() {
         <div className={styles.interest}>
           <div className={styles.interestInfo}>
             <p>
-              This is my MK7 VW GTI. I love this car because it was the speed to
+              This is my MK7 VW GTI. I love this car because it has the speed to
               explode through traffic while being a great daily commuter Some
               mods I have done: clubsport exhuast, carbon fiber spoiler
               extension, diffuser, and gloss black rims.
