@@ -4,7 +4,7 @@
 }
 
 .infoContainer {
-    margin: 50px 15% 50px;
+  margin: 15px 15% 30px;
 }
 
 .mainContainer h1 {
@@ -35,8 +35,28 @@
   background-color: var(--hover);
 }
 
-.moreInfo {
+.imageContainer {
   margin: 0 15%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+}
+
+.imageText {
+  margin: 0 30px;
+}
+
+.image {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  height: 400px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.moreInfo {
+  margin: 0 15% 30px;
 }
 
 .skillContainer {
@@ -48,4 +68,16 @@
   display: inline-flex;
   justify-content: space-evenly;
   color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .imageContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .imageContainer {
+    grid-template-columns: 1fr;
+  }
 }

@@ -64,11 +64,10 @@ const MyComponent: React.FC<Props> = (props) => {
           </div>
         </div>
         <p>
-          Cryptic Coordinates is a iOS app I built with SwiftUI. I followed the
-          MVVVM design pattern for this app. It reveals haunted locations and
-          ancient hidden in plain sight. Navigate through an interactive map
-          built with the MapKit framework. There is a high volume of locations
-          on the map so I used{" "}
+          iOS app built with SwiftUI and the MVVVM design pattern. It reveals
+          haunted locations and ancient hidden in plain sight. Navigate through
+          an interactive map built with MapKit. There is a high volume of
+          locations on the map so I used{" "}
           <a
             href="https://github.com/vospennikov/ClusterMap.git"
             target="_blank"
@@ -80,6 +79,79 @@ const MyComponent: React.FC<Props> = (props) => {
           coordinate with directions included. Search navigation allows browsing
           of locations country wide.
         </p>
+      </div>
+      <div className={styles.imageContainer}>
+        <div className={styles.imageText}>
+          <div className={styles.image}>
+            <Image
+              src={"/crytpidcoordinates/image1.png"}
+              alt="app preview"
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
+          <p>Explore Cryptid Coordinates as map markers.</p>
+        </div>
+        <div className={styles.imageText}>
+          <div className={styles.image}>
+            <Image
+              src={"/crytpidcoordinates/image2.png"}
+              alt="app preview"
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
+          <p>Investigate locations to learn more.</p>
+        </div>
+        <div className={styles.imageText}>
+          <div className={styles.image}>
+            <Image
+              src={"/crytpidcoordinates/image3.png"}
+              alt="app preview"
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
+          <p>Every Cryptid Coordinate has a unique story.</p>
+        </div>
+        <div className={styles.imageText}>
+          <div className={styles.image}>
+            <Image
+              src={"/crytpidcoordinates/image4.png"}
+              alt="app preview"
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
+          <p>Saved locations stored in user default to come back to later.</p>
+        </div>
+        <div className={styles.imageText}>
+          <div className={styles.image}>
+            <Image
+              src={"/crytpidcoordinates/image5.png"}
+              alt="app preview"
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
+          <p>
+            Easily search over a list of citys to teleport there on the map.
+          </p>
+        </div>
+        <div className={styles.imageText}>
+          <div className={styles.image}>
+            <Image
+              src={"/crytpidcoordinates/image6.png"}
+              alt="app preview"
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
+          <p>
+            MapCluster in action. Makers clustering when zooming out improve map
+            user experience.
+          </p>
+        </div>
       </div>
     </section>
   );
