@@ -34,3 +34,18 @@
 .button:hover {
   background-color: var(--hover);
 }
+
+.moreInfo {
+  margin: 0 15%;
+}
+
+.skillContainer {
+  margin: 10px 0;
+}
+
+.skill {
+  padding: 8px 20px 0px 0px;
+  display: inline-flex;
+  justify-content: space-evenly;
+  color: var(--primary);
+}

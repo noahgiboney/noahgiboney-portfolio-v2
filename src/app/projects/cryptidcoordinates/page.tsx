@@ -38,6 +38,49 @@ const MyComponent: React.FC<Props> = (props) => {
           </Link>
         </div>
       </div>
+      <div className={styles.moreInfo}>
+        <h2>Built With</h2>
+        <div className={styles.skillContainer}>
+          <div className={styles.skill}>
+            <p>SwiftUI</p>
+          </div>
+          <div className={styles.skill}>
+            <p>●</p>
+          </div>
+          <div className={styles.skill}>
+            <p>MapKit</p>
+          </div>
+          <div className={styles.skill}>
+            <p>●</p>
+          </div>
+          <div className={styles.skill}>
+            <p>MVVM</p>
+          </div>
+          <div className={styles.skill}>
+            <p>●</p>
+          </div>
+          <div className={styles.skill}>
+            <p>API</p>
+          </div>
+        </div>
+        <p>
+          Cryptic Coordinates is a iOS app I built with SwiftUI. I followed the
+          MVVVM design pattern for this app. It reveals haunted locations and
+          ancient hidden in plain sight. Navigate through an interactive map
+          built with the MapKit framework. There is a high volume of locations
+          on the map so I used{" "}
+          <a
+            href="https://github.com/vospennikov/ClusterMap.git"
+            target="_blank"
+          >
+            ClusterMap
+          </a>{" "}
+          as a package dependecy to improve performace of rendering markers on
+          the map. Selecting an map marker reveals details of the cryptid
+          coordinate with directions included. Search navigation allows browsing
+          of locations country wide.
+        </p>
+      </div>
     </section>
   );
 };

@@ -4,10 +4,6 @@
   padding: 20px;
 }
 
-.background a {
-  color: var(--accent);
-}
-
 .background h1 {
   font-size: 3rem;
   margin-bottom: 10px;
