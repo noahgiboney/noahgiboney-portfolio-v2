@@ -47,7 +47,8 @@
   display: flex;
   justify-content: start;
   gap: 10px;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  justify-content: center;
 }
 
 .button {
@@ -60,7 +61,6 @@
     background-color 0.3s ease;
   background-color: var(--accent);
   border: none;
-  font-size: 1.25rem;
   font: inherit;
 }
 
