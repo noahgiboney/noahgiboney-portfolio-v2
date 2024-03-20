@@ -4,9 +4,6 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 function NavBar() {
-
-  const router = useRouter
-
   return (
     <>
       <div className={styles.navBar}>
@@ -31,9 +28,6 @@ function NavBar() {
             </li>
             <li>
               <Link href={"/projects"}>Projects</Link>
-            </li>
-            <li>
-              <Link href={"/blog"}>Blog</Link>
             </li>
             <li>
               <Link href={"/contact"}>Contact</Link>
