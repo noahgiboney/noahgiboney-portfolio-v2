@@ -48,8 +48,6 @@ export default function ContactForm() {
 
   return (
     <div className={style.background}>
-      <div className={style.info}></div>
-
       <form
         ref={form}
         onSubmit={sendEmail}
@@ -60,7 +58,12 @@ export default function ContactForm() {
           <p>
             {" "}
             Message below or reach out on{" "}
-            <a href="https://www.linkedin.com/in/noah-giboney-896847261/" target="_blank">LinkedIn.</a>
+            <a
+              href="https://www.linkedin.com/in/noah-giboney-896847261/"
+              target="_blank"
+            >
+              LinkedIn.
+            </a>
           </p>
         </div>
 

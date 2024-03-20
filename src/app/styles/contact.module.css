@@ -1,12 +1,12 @@
 .background {
   background-color: var(--background);
   height: 85vh;
-  padding: 20px;
 }
 
 .background h1 {
   font-size: 3rem;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .background p {
@@ -52,6 +52,7 @@
 
 .button {
   color: var(--background);
+  font-size: 1rem;
   padding: 8px 20px;
   border-radius: 8px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
@@ -60,6 +61,7 @@
   background-color: var(--accent);
   border: none;
   font-size: 1.25rem;
+  font: inherit;
 }
 
 .button:hover {
