@@ -66,7 +66,9 @@ const projectPage = () => {
               </div>
             </div>
           </div>
-          <ImageSlider images={test} />
+          <div className={styles.imageContainer}>
+            <ImageSlider images={test} />
+          </div>
         </div>
       </div>
     </section>

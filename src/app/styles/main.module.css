@@ -158,6 +158,13 @@
   align-items: center;
 }
 
+.imageContainer {
+  width: 25%;
+  background-color: var(--primary);
+}
+
+
+
 /* INTERESTS */
 
 .interestsContainer {
@@ -176,7 +183,7 @@
 }
 
 .interestInfo {
-  width: 80%;
+  width: 82%;
   margin-right: 30px;
 }
 
@@ -189,4 +196,46 @@
   box-shadow: 5px 4px 6px -1px rgba(0, 0, 0, 0.2),
     0 2px 4px -1px rgba(0, 0, 0, 0.2);
   margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+
+  .infoContainer {
+    flex-direction: column;
+  }
+
+  .info {
+    max-width: 83%;
+  }
+
+  .button {
+    padding: 8px 8px;
+  }
+  
+  .socialContainer {
+    gap: 10px;
+  }
+
+  .projectContainer {
+    margin: 0 6%;
+  }
+
+  .project {
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px 15px;
+  }
+
+  .projectInfo {
+    width: 100%;
+  }
+
+  .imageContainer {
+    width: 50%;
+  }
+
+  .interestsContainer {
+    margin: 0 6%;
+  }
 }

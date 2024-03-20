@@ -150,7 +150,10 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className={styles.imageContainer}>
           <ImageSlider images={test} />
+          </div>
+
         </div>
       </section>
       <section className={styles.interestsContainer}>
