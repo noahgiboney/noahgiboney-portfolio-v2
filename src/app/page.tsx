@@ -3,12 +3,13 @@ import Link from "next/link";
 import styles from "./styles/main.module.css";
 import AppLogo from "./components/AppLogo";
 import ImageSlider from "./components/ImageSlider";
+import appleicon from "public/appleicon.png";
 
 export default function Home() {
   const test = [
-    "/crytpidcoordinates/preview1.png",
-    "/crytpidcoordinates/preview2.png",
-    "/crytpidcoordinates/preview3.png",
+    "/crytpidcoordinates/previews/preview1.png",
+    "/crytpidcoordinates/previews/preview2.png",
+    "/crytpidcoordinates/previews/preview3.png",
   ];
 
   return (
@@ -71,7 +72,7 @@ export default function Home() {
             >
               <div className={styles.button}>
                 <Image
-                  src={"/appleicon.png"}
+                  src={'/appleicon.png'}
                   alt="apple icon"
                   width={16}
                   height={16}
@@ -151,9 +152,8 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.imageContainer}>
-          <ImageSlider images={test} />
+            <ImageSlider images={test} />
           </div>
-
         </div>
       </section>
       <section className={styles.interestsContainer}>
@@ -170,7 +170,7 @@ export default function Home() {
           <div className={styles.interestPhoto}>
             <Image
               src={"/gti.jpg"}
-              alt="app preview"
+              alt="git pic"
               layout="fill"
               objectFit="fill"
             />
@@ -180,7 +180,7 @@ export default function Home() {
           <div className={styles.interestPhoto}>
             <Image
               src={"/soccer.jpg"}
-              alt="app preview"
+              alt="soccer pic"
               layout="fill"
               objectFit="fill"
             />
