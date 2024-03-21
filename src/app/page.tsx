@@ -3,7 +3,6 @@ import Link from "next/link";
 import styles from "./styles/main.module.css";
 import AppLogo from "./components/AppLogo";
 import ImageSlider from "./components/ImageSlider";
-import appleicon from "public/appleicon.png";
 
 export default function Home() {
   const test = [
@@ -20,9 +19,9 @@ export default function Home() {
           <div className={styles.infoLine}></div>
           <h3>iOS Developer & CS @ Cal Poly</h3>
           <p>
-            Hi, my name is Noah Giboney, I&apos;m an aspiring iOS Developer and
-            a third-year Computer Science student at Cal Poly, San Luis Obispo.
-            Explore my projects below to see what I&apos;ve been working on.
+            Hi, my name is Noah Giboney, I&apos;m a a third-year Computer
+            Science student at Cal Poly, San Luis Obispo, interested in iOS
+            software engineering. Explore my projects and more about me below.
           </p>
           <div className={styles.socialContainer}>
             <Link
@@ -72,7 +71,7 @@ export default function Home() {
             >
               <div className={styles.button}>
                 <Image
-                  src={'/appleicon.png'}
+                  src={"/appleicon.png"}
                   alt="apple icon"
                   width={16}
                   height={16}
@@ -179,7 +178,7 @@ export default function Home() {
         <div className={styles.interest}>
           <div className={styles.interestPhoto}>
             <Image
-              src={"/soccer.jpg"}
+              src={"/soccer.JPG"}
               alt="soccer pic"
               layout="fill"
               objectFit="fill"

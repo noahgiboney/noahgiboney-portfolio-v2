@@ -5,9 +5,9 @@ import ImageSlider from "../components/ImageSlider";
 
 const projectPage = () => {
   const test = [
-    "/crytpidcoordinates/preview1.png",
-    "/crytpidcoordinates/preview2.png",
-    "/crytpidcoordinates/preview3.png",
+    "/crytpidcoordinates/previews/preview1.png",
+    "/crytpidcoordinates/previews/preview2.png",
+    "/crytpidcoordinates/previews/preview3.png",
   ];
 
   return (
