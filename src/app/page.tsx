@@ -178,7 +178,7 @@ export default function Home() {
         <div className={styles.interest}>
           <div className={styles.interestPhoto}>
             <Image
-              src={"/soccer.JPG"}
+              src={"/soccerpic.JPG"}
               alt="soccer pic"
               layout="fill"
               objectFit="fill"
