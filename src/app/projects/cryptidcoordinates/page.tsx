@@ -64,7 +64,7 @@ const MyComponent: React.FC<Props> = (props) => {
           </div>
         </div>
         <p>
-          iOS app built with SwiftUI and the MVVVM design pattern. It reveals
+          iOS app built with SwiftUI and the MVVM design pattern. It reveals
           haunted locations and ancient hidden in plain sight. Navigate through
           an interactive map built with MapKit. There is a high volume of
           locations on the map so I used{" "}

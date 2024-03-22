@@ -131,22 +131,10 @@ export default function Home() {
                 <p>SwiftUI</p>
               </div>
               <div className={styles.skill}>
-                <p>●</p>
-              </div>
-              <div className={styles.skill}>
-                <p>MapKit</p>
-              </div>
-              <div className={styles.skill}>
-                <p>●</p>
-              </div>
-              <div className={styles.skill}>
                 <p>MVVM</p>
               </div>
               <div className={styles.skill}>
-                <p>●</p>
-              </div>
-              <div className={styles.skill}>
-                <p>API</p>
+                <p>MapKit</p>
               </div>
             </div>
           </div>
