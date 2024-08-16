@@ -83,9 +83,9 @@ const MyComponent: React.FC<Props> = (props) => {
           Overview of features: Discover Haunted Locations: Browse a list of
           over ten thousand haunted spots across the U.S., each with detailed
           information and spine-chilling stories told by other users. Visit &
-          Compete: Track the locations you've visited and climb the leaderboard.
+          Compete: Track the locations you&apos;ve visited and climb the leaderboard.
           Challenge your friends and see who can visit the most haunted sites.
-          Explore Nearby: Find haunted locations near you with the app's
+          Explore Nearby: Find haunted locations near you with the app&apos;s
           location-based search and share your ghost hunting experience.
           Interactive Map: View and navigate to haunted places with an
           easy-to-use map interface, allowing your exploration to be visual.
