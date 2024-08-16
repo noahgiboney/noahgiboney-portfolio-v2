@@ -34,6 +34,13 @@ export default function Home() {
           </p>
           <div className={styles.socialContainer}>
             <Link
+              href={"/Noah Giboney Resume.pdf"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div className={styles.button}>Resume</div>
+            </Link>
+            <Link
               href={"https://www.linkedin.com/in/noah-giboney-896847261/"}
               rel="noopener noreferrer"
               target="_blank"
@@ -71,13 +78,30 @@ export default function Home() {
                 />
               </div>
             </Link>
+          </div>
+          <div className={styles.downloadsContainer}>
             <Link
-              href={"/Noah Giboney Resume.pdf"}
+              href={
+                "https://apps.apple.com/us/developer/noah-giboney/id1732186750"
+              }
               rel="noopener noreferrer"
               target="_blank"
             >
-              <div className={styles.button}>Resume</div>
+              <div className={styles.button}>
+                <Image
+                  src={"/appleicon.png"}
+                  alt="apple icon"
+                  width={16}
+                  height={16}
+                  objectFit="contain"
+                />
+                App Store
+              </div>
             </Link>
+            <div className={styles.innerContainer}>
+              <h2>1300+</h2>
+              <p>App Store Downloads</p>
+            </div>
           </div>
         </div>
         <div className={styles.faceshot}>
@@ -89,31 +113,6 @@ export default function Home() {
           />
         </div>
       </div>
-
-      {/* <section className={styles.downloadsContainer}></section> */}
-
-      {/* <section className={styles.downloadsContainer}>
-          <p><span className={styles.downloads}>1,232</span> Downloads on the</p>
-          <Link
-              href={
-                "https://apps.apple.com/us/developer/noah-giboney/id1732186750"
-              }
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <div className={styles.appStoreButton}>
-                <Image
-                  src={"/appleicon.png"}
-                  alt="apple icon"
-                  width={16}
-                  height={16}
-                  objectFit="contain"
-                />
-                App Store
-              </div>
-            </Link>
-      </section> */}
-
       <section className={styles.projectContainer}>
         <h1>Published Apps</h1>
         <div

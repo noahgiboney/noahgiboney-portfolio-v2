@@ -116,14 +116,16 @@
 .downloadsContainer {
   display: flex;
   flex-direction: row;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  gap: 8%;
-  padding: 35px 0;
-  background-color: var(--background);
+  padding-top: 15px;
+  gap: 20px;
 }
 
+.innerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 10px;
+}
 
 /* PROJECTS */
 
