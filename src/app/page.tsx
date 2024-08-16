@@ -5,10 +5,13 @@ import AppLogo from "./components/AppLogo";
 import ImageSlider from "./components/ImageSlider";
 
 export default function Home() {
-  const test = [
-    "/crytpidcoordinates/previews/preview1.png",
-    "/crytpidcoordinates/previews/preview2.png",
-    "/crytpidcoordinates/previews/preview3.png",
+  const cryptidCoordinatesPreviews = [
+    "/crytpidcoordinates/preview1.png",
+    "/crytpidcoordinates/preview2.png",
+    "/crytpidcoordinates/preview3.png",
+    "/crytpidcoordinates/preview4.png",
+    "/crytpidcoordinates/preview5.png",
+    "/crytpidcoordinates/preview6.png",
   ];
 
   const asteroidVisionPreviews = [
@@ -23,11 +26,11 @@ export default function Home() {
         <div className={styles.info}>
           <h1>Noah Giboney</h1>
           <div className={styles.infoLine}></div>
-          <h3>CS @ Cal Poly</h3>
+          <h3>iOS Software Engineer • CS @ Cal Poly</h3>
           <p>
-            Hi, my name is Noah Giboney, I&apos;m a a third-year Computer
-            Science student at Cal Poly, San Luis Obispo, interested in iOS
-            software engineering. Explore my projects and more about me below.
+            I&apos;m a a fourth-year Computer Science student at Cal Poly, San
+            Luis Obispo, specializeing in iOS software engineering. Check out my
+            apps and learn more about me below.
           </p>
           <div className={styles.socialContainer}>
             <Link
@@ -69,24 +72,6 @@ export default function Home() {
               </div>
             </Link>
             <Link
-              href={
-                "https://apps.apple.com/us/developer/noah-giboney/id1732186750"
-              }
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <div className={styles.button}>
-                <Image
-                  src={"/appleicon.png"}
-                  alt="apple icon"
-                  width={16}
-                  height={16}
-                  objectFit="contain"
-                />
-                App Store
-              </div>
-            </Link>
-            <Link
               href={"/Noah Giboney Resume.pdf"}
               rel="noopener noreferrer"
               target="_blank"
@@ -104,18 +89,33 @@ export default function Home() {
           />
         </div>
       </div>
-      {/* <section className={styles.experienceContainer}>
-        <h1>Experience</h1>
-        <div className={styles.experience}>
-          <AppLogo path="/lifelogo.jpeg" />
-          <div className={styles.title}>
-            <h3>iOS Developer</h3>
-            <p className={styles.date}>March 2024 - Present</p>
-          </div>
-        </div>
+
+      {/* <section className={styles.downloadsContainer}></section> */}
+
+      {/* <section className={styles.downloadsContainer}>
+          <p><span className={styles.downloads}>1,232</span> Downloads on the</p>
+          <Link
+              href={
+                "https://apps.apple.com/us/developer/noah-giboney/id1732186750"
+              }
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div className={styles.appStoreButton}>
+                <Image
+                  src={"/appleicon.png"}
+                  alt="apple icon"
+                  width={16}
+                  height={16}
+                  objectFit="contain"
+                />
+                App Store
+              </div>
+            </Link>
       </section> */}
+
       <section className={styles.projectContainer}>
-        <h1>Projects</h1>
+        <h1>Published Apps</h1>
         <div
           className={styles.project}
           style={{ backgroundColor: "var(--primary)" }}
@@ -126,10 +126,10 @@ export default function Home() {
               <h2>Cryptid Coordinates</h2>
             </div>
             <p>
-              Cryptic Coordinates is a iOS app I built with SwiftUI and MapKit.
-              Through database management and asynchronous network calls, it
-              reveals haunted locations and ancient secrets hidden in plain
-              sight. It is available on the app store, see below.
+              Cryptid Coordinates is platform for exploring haunted locations.
+              Explore over 10,000 locations across the United State, share
+              spooky stories, and compete to visit the most haunted locations.
+              Learn more below and check it out on the app store.
             </p>
             <div className={styles.buttonContainter}>
               <Link
@@ -162,18 +162,18 @@ export default function Home() {
                 <p>SwiftUI</p>
               </div>
               <div className={styles.skill}>
-                <p>MVVM</p>
+                <p>Firebase</p>
+              </div>
+              <div className={styles.skill}>
+                <p>SwiftData</p>
               </div>
               <div className={styles.skill}>
                 <p>MapKit</p>
               </div>
-              <div className={styles.skill}>
-                <p>Rest API</p>
-              </div>
             </div>
           </div>
           <div className={styles.imageContainer}>
-            <ImageSlider images={test} />
+            <ImageSlider images={cryptidCoordinatesPreviews} />
           </div>
         </div>
         <div
@@ -186,11 +186,9 @@ export default function Home() {
               <h2>Asteroid Vision</h2>
             </div>
             <p>
-              Asteroid Vision, an app I built with SwiftUI and the NASA
-              NEO objects Rest API. Through fethcing data by paginating and MVVM
-              design pattern, I list hazardous and nonhazardous asteroids and
-              display asteroid data and future appraoches. I also used SceneKit
-              to display 3D models in the app.
+              Asteroid Vision is an iOS app for browsing incoming asteroids that
+              are marked as hazardous by NASA. Each asteroid includes its
+              extensive history and orbital data.
             </p>
             <div className={styles.buttonContainter}>
               <Link href={"/projects/asteroidvision"} rel="noopener noreferrer">
@@ -220,16 +218,13 @@ export default function Home() {
                 <p>SwiftUI</p>
               </div>
               <div className={styles.skill}>
-                <p>MVVM</p>
-              </div>
-              <div className={styles.skill}>
                 <p>SceneKit</p>
               </div>
               <div className={styles.skill}>
                 <p>Rest API</p>
               </div>
               <div className={styles.skill}>
-                <p>Pagination</p>
+                <p>URLSession</p>
               </div>
             </div>
           </div>

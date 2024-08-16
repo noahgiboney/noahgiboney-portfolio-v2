@@ -74,10 +74,31 @@
   .imageContainer {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .projectHeader {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
   .imageContainer {
     grid-template-columns: 1fr;
   }
+}
+
+.projectHeader {
+  display: flex;
+  gap: 20px;
+}
+
+.skillsHeader {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.vidContainer {
+  display: flex;
+  justify-content: center;
+  margin: 35px 0px;
 }

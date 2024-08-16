@@ -2,6 +2,7 @@ import React from "react";
 import styles from "@/app/styles/project.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import AppLogo from "@/app/components/AppLogo";
 
 interface Props {}
 
@@ -9,12 +10,13 @@ const MyComponent: React.FC<Props> = (props) => {
   return (
     <section className={styles.mainContainer}>
       <div className={styles.infoContainer}>
-        <h1>Asteroid Vision</h1>
+        <div className={styles.projectHeader}>
+          <AppLogo path="/asteroidvision-icon.png" />
+          <h1>Asteroid Vision</h1>
+        </div>
         <div className={styles.buttonContainter}>
           <Link
-            href={
-              "https://apps.apple.com/us/app/asteroid-vision/id6480248381"
-            }
+            href={"https://apps.apple.com/us/app/asteroid-vision/id6480248381"}
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -39,44 +41,57 @@ const MyComponent: React.FC<Props> = (props) => {
         </div>
       </div>
       <div className={styles.moreInfo}>
-        <h2>Built With</h2>
-        <div className={styles.skillContainer}>
-          <div className={styles.skill}>
-            <p>SwiftUI</p>
-          </div>
-          <div className={styles.skill}>
-            <p>●</p>
-          </div>
-          <div className={styles.skill}>
-            <p>MVVM</p>
-          </div>
-          <div className={styles.skill}>
-            <p>●</p>
-          </div>
-          <div className={styles.skill}>
-            <p>SceneKit</p>
-          </div>
-          <div className={styles.skill}>
-            <p>●</p>
-          </div>
-          <div className={styles.skill}>
-            <p>Rest API</p>
-          </div>
-          <div className={styles.skill}>
-            <p>●</p>
-          </div>
-          <div className={styles.skill}>
-            <p>Pagination</p>
+        <div className={styles.skillsHeader}>
+          <h2>Built With</h2>
+          <div className={styles.skillContainer}>
+            <div className={styles.skill}>
+              <p>SwiftUI</p>
+            </div>
+            <div className={styles.skill}>
+              <p>●</p>
+            </div>
+            <div className={styles.skill}>
+              <p>SceneKit</p>
+            </div>
+            <div className={styles.skill}>
+              <p>●</p>
+            </div>
+            <div className={styles.skill}>
+              <p>REST API</p>
+            </div>
+            <div className={styles.skill}>
+              <p>●</p>
+            </div>
+            <div className={styles.skill}>
+              <p>URLSession</p>
+            </div>
           </div>
         </div>
         <p>
-          Asteroid Vision is an iOS app I built with SwiftUI and the NASA NEO
-          objects Rest API. Through fethcing data by paginating and MVVM design
-          pattern, I list hazardous and nonhazardous asteroids and display
-          asteroid data and their future appraoches. I also used SceneKit to
-          display 3D models in the app. Users can build a list of favorites that
-          are stored in user defaults. Filter through asteoirds via sliders and
-          also swtich between supported unit types.
+          Asteroid Visison is an iOS app to browse asteroids that are marked as
+          hazardous by NASA. This was made possible by the NASA NEO Objects REST
+          API. Users can explore orbital data and build a list of favorites.
+        </p>
+        <br></br>
+        <p>
+          In order to handle the NASA REST API, I maintained a Asteroid Store,
+          which is an observerable object that communicated with an HTTPClient
+          that is responsible for fetching the asteroids from the API using
+          URLSession. I also implemented pagination as the users scrolls to
+          fetch more asteroids.
+        </p>
+        <br></br>
+        <p>
+          Users can change thier unit preference in the contorl center. This was
+          handled by storing an observerable object in the environment and
+          passing this a bindable to the control center, so that one source of
+          truth is maintained. Users unit selection are also stored in
+          UserDefaults.
+        </p>
+        <br></br>
+        <p>
+          I used SceneKit to render 3D models of the earth and asteroids,
+          creating a dynamic and interactive user interface.
         </p>
       </div>
       <div className={styles.imageContainer}>
@@ -89,7 +104,7 @@ const MyComponent: React.FC<Props> = (props) => {
               objectFit="contain"
             />
           </div>
-          <p>Explore hazardous asteroids approaching earth.</p>
+          <p>Browse hazardous asteroids approaching earth.</p>
         </div>
         <div className={styles.imageText}>
           <div className={styles.image}>
@@ -100,7 +115,7 @@ const MyComponent: React.FC<Props> = (props) => {
               objectFit="contain"
             />
           </div>
-          <p>Browse a full collection of asteroids in our galaxy.</p>
+          <p>Asteroid history and orbital data.</p>
         </div>
         <div className={styles.imageText}>
           <div className={styles.image}>
@@ -111,46 +126,7 @@ const MyComponent: React.FC<Props> = (props) => {
               objectFit="contain"
             />
           </div>
-          <p>
-            View detailed data about the asteroids, including their future
-            approaches.
-          </p>
-        </div>
-        <div className={styles.imageText}>
-          <div className={styles.image}>
-            <Image
-              src={"/asteroidvision/preview4.png"}
-              alt="app preview"
-              layout="fill"
-              objectFit="contain"
-            />
-          </div>
-          <p>
-            Build a list of favorites, stored in user defaults to come back to
-            later.
-          </p>
-        </div>
-        <div className={styles.imageText}>
-          <div className={styles.image}>
-            <Image
-              src={"/asteroidvision/preview5.png"}
-              alt="app preview"
-              layout="fill"
-              objectFit="contain"
-            />
-          </div>
-          <p>Filter asteroids by size, velocity and magnitude.</p>
-        </div>
-        <div className={styles.imageText}>
-          <div className={styles.image}>
-            <Image
-              src={"/asteroidvision/preview6.png"}
-              alt="app preview"
-              layout="fill"
-              objectFit="contain"
-            />
-          </div>
-          <p>Data is supported in several unit selections.</p>
+          <p>Control the units for each statistic.</p>
         </div>
       </div>
     </section>

@@ -8,8 +8,8 @@ import Headroom from "react-headroom";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Noah Giboney Portfolio",
-  description: "Portfolio website for Noah Giboney",
+  title: "Noah Giboney",
+  description: "Noah Giboney's Website",
 };
 
 export default function RootLayout({

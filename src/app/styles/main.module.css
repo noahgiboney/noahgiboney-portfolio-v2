@@ -111,6 +111,20 @@
   color: var(--primary);
 }
 
+/*DOWNLAODS*/
+
+.downloadsContainer {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 8%;
+  padding: 35px 0;
+  background-color: var(--background);
+}
+
+
 /* PROJECTS */
 
 .projectContainer {
@@ -195,8 +209,6 @@
   background-color: var(--primary);
 }
 
-
-
 /* INTERESTS */
 
 .interestsContainer {
@@ -231,7 +243,6 @@
 }
 
 @media (max-width: 768px) {
-
   .infoContainer {
     flex-direction: column;
   }
@@ -243,7 +254,7 @@
   .button {
     padding: 8px 8px;
   }
-  
+
   .socialContainer {
     gap: 10px;
   }
