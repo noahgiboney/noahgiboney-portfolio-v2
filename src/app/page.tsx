@@ -33,13 +33,13 @@ export default function Home() {
             apps and learn more about me below.
           </p>
           <div className={styles.socialContainer}>
-            <Link
+            {/* <Link
               href={"/Noah Giboney Resume.pdf"}
               rel="noopener noreferrer"
               target="_blank"
             >
               <div className={styles.button}>Resume</div>
-            </Link>
+            </Link> */}
             <Link
               href={"https://www.linkedin.com/in/noah-giboney-896847261/"}
               rel="noopener noreferrer"
@@ -99,7 +99,7 @@ export default function Home() {
               </div>
             </Link>
             <div className={styles.innerContainer}>
-              <h2>1300+</h2>
+              <h2>1500+</h2>
               <p>App Store Downloads</p>
             </div>
           </div>
@@ -185,8 +185,7 @@ export default function Home() {
               <h2>Asteroid Vision</h2>
             </div>
             <p>
-              Asteroid Vision is an iOS app for browsing incoming asteroids that
-              are marked as hazardous by NASA. Each asteroid includes its
+              Asteroid Vision is an iOS app for searching and browsing asteroids. Each asteroid includes its
               extensive history and orbital data.
             </p>
             <div className={styles.buttonContainter}>
@@ -213,8 +212,11 @@ export default function Home() {
               </Link>
             </div>
             <div className={styles.skillContainer}>
+            <div className={styles.skill}>
+                <p>URLSession</p>
+              </div>
               <div className={styles.skill}>
-                <p>SwiftUI</p>
+                <p>MVVM</p>
               </div>
               <div className={styles.skill}>
                 <p>SceneKit</p>

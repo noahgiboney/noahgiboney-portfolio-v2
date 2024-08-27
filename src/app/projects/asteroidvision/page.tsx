@@ -51,6 +51,12 @@ const MyComponent: React.FC<Props> = (props) => {
               <p>●</p>
             </div>
             <div className={styles.skill}>
+              <p>MVVM</p>
+            </div>
+            <div className={styles.skill}>
+              <p>●</p>
+            </div>
+            <div className={styles.skill}>
               <p>SceneKit</p>
             </div>
             <div className={styles.skill}>
@@ -68,30 +74,31 @@ const MyComponent: React.FC<Props> = (props) => {
           </div>
         </div>
         <p>
-          Asteroid Visison is an iOS app to browse asteroids that are marked as
-          hazardous by NASA. This was made possible by the NASA NEO Objects REST
-          API. Users can explore orbital data and build a list of favorites.
+          Asteroid Visison is an iOS app to browse browse and filter asteroids.
+          This was made possible by the NASA NEO Objects REST API. Users can
+          explore orbital data and build a list of favorites.
         </p>
         <br></br>
         <p>
-          In order to handle the NASA REST API, I maintained a Asteroid Store,
-          which is an observerable object that communicated with an HTTPClient
-          that is responsible for fetching the asteroids from the API using
-          URLSession. I also implemented pagination as the users scrolls to
-          fetch more asteroids.
+          I built this app following the MVVM pattern. I had an API service that
+          was responsible for fetching the asteroids. For this service, I used
+          URLSession and modern swift concurrency, using things like async await
+          and group tasks. The API service fetched the JSON objects and returned
+          it the viewmodel, which perfomred the buisness logic and provided the
+          view the data for the user interface.
         </p>
         <br></br>
         <p>
-          Users can change thier unit preference in the contorl center. This was
-          handled by storing an observerable object in the environment and
-          passing this a bindable to the control center, so that one source of
-          truth is maintained. Users unit selection are also stored in
+          Users can change their unit preference in the unit control center.
+          This was handled by storing an observerable object in the environment
+          and passing this a bindable to the control center, so that one source
+          of truth is maintained. Users unit selection are also stored in
           UserDefaults.
         </p>
         <br></br>
         <p>
-          I used SceneKit to render 3D models of the earth and asteroids,
-          creating a dynamic and interactive user interface.
+          Lastly, I used SceneKit to render 3D models of the earth and
+          asteroids, creating a dynamic and interactive user interface.
         </p>
       </div>
       <div className={styles.imageContainer}>
