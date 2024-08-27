@@ -125,6 +125,7 @@
   flex-direction: row;
   align-items: baseline;
   gap: 10px;
+  margin-top: 4px;
 }
 
 /* PROJECTS */
@@ -251,6 +252,7 @@
 
   .info {
     max-width: 83%;
+    padding-bottom: 20px;
   }
 
   .button {
@@ -278,6 +280,7 @@
 
   .imageContainer {
     width: 50%;
+    padding-bottom: 45px;
   }
 
   .interestsContainer {
